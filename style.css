@@ -5,10 +5,16 @@ body {
   color: white;
 }
 
+/* HEADER */
 header {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
 }
+
+header h1 {
+  font-size: 42px;
+}
+
 .subtitle {
   color: #7aa2ff;
   margin-top: 10px;
@@ -20,66 +26,85 @@ header {
   font-size: 15px;
   color: #cfd3ff;
 }
-header h1 {
-  font-size: 42px;
-}
+
 .tagline {
   margin-top: 15px;
   font-size: 14px;
   color: #aab4ff;
   opacity: 0.9;
 }
-header p {
-  color: #7dd3fc;
+
+/* BUTTONS */
+.buttons {
+  margin-top: 25px;
 }
 
 .btn {
   display: inline-block;
   padding: 12px 30px;
-  background: transparent; section {
-  padding: 60px 10%;
-}
-(45deg, #7c3aed, #3b82f6);
-  color: white;
-  text-decoration: none;
   border-radius: 25px;
-  margin-top: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.3);
+  margin: 0 10px;
 }
 
+.btn.primary {
+  background: linear-gradient(45deg, #7c3aed, #3b82f6);
+  border: none;
+}
+
+/* HERO SECTION */
 .hero {
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;
+  padding: 60px 10%;
   gap: 40px;
   align-items: center;
 }
 
 .hero img {
+  max-width: 350px;
   border-radius: 12px;
   border: 3px solid rgba(122,162,255,0.4);
 }
 
-.skills, .projects, .contact {
-  text-align: center;
-  margin: 60px 0;
-  .credibility {
-  text-align: center;
-  margin-top: 15px;
-  font-size: 14px;
-  color: #cfd3ff;
-}
+.hero h2 {
+  margin-bottom: 15px;
 }
 
+/* SECTIONS */
+section {
+  padding: 60px 10%;
+}
+
+.services, .projects, .contact {
+  text-align: center;
+}
+
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 25px;
 }
 
 .grid div {
   background: rgba(255,255,255,0.05);
-  padding: 15px;
-  border-radius: 10px;
+  padding: 18px;
+  border-radius: 12px;
   font-size: 14px;
+}
+
+/* PROJECT TEXT */
+.credibility {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #cfd3ff;
+}
+
+/* CONTACT */
+.contact p {
+  margin: 10px 0;
 }
